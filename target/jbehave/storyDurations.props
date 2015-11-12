@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Nov 12 12:39:27 CET 2015
+StoryFile.story=0
+threads=1
+total=0
+threadAverage=0
