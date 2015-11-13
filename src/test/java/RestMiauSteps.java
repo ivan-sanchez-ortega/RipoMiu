@@ -12,21 +12,21 @@ public class RestMiauSteps {
     private ContactHelper contactHelper;
     private Contact contact;
 
-    @Given ("a url $url")
-    public void givenStep(String url){
+    @Given("a url")
+    public void givenStep() {
         url = "http://jsonplaceholder.typicode.com";
-        contactHelper = new ContactHelper("site","user", "password", url);
+        contactHelper = new ContactHelper("site", "user", "password", url);
     }
 
     @When("I send a message")
-    public void whenStep(){
+    public void whenStep() {
         contact = contactHelper.GetContact(1);
     }
 
 
-    @Then ("I get an id $id")
-    public void thenStep(int id){
-        Assert.assertEquals("Test fail",1,contact.id);
+    @Then("I get an id")
+    public void thenStep() {
+        Assert.assertEquals("Test fail", 1, contact.id);
     }
 
 }
